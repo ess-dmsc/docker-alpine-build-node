@@ -8,6 +8,8 @@ RUN apk add --no-cache python3 \
     cmake \
     bash \
     git \
+    m4 \
+    perl \
     tzdata \
     libstdc++ && \
     python3 -m ensurepip && \
