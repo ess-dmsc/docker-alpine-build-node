@@ -25,8 +25,6 @@ RUN mkdir $CONAN_USER_HOME && \
 COPY files/registry.json $CONAN_USER_HOME/.conan/
 COPY files/default_profile $CONAN_USER_HOME/.conan/profiles/default
 
-RUN conan install cmake_installer/3.10.0@conan/stable
-
 RUN git clone https://github.com/ess-dmsc/build-utils.git && \
     cd build-utils && \
     git checkout c05ed046dd273a2b9090d41048d62b7d1ea6cdf3 && \
