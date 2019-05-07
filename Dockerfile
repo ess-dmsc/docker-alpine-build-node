@@ -10,7 +10,6 @@ RUN apk add --no-cache python3 \
     git \
     m4 \
     perl \
-    libpcap-dev \
     cloc \
     valgrind \
     vim \
