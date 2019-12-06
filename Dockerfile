@@ -24,10 +24,12 @@ RUN apk add --no-cache python3 \
     libstdc++ && \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
-    pip3 install --upgrade pip setuptools conan==1.15.0 && \
+    pip3 install --upgrade pip setuptools conan==1.20.5 && \
     if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && \
     if [[ ! -e /usr/bin/python ]]; then ln -sf /usr/bin/python3 /usr/bin/python; fi && \
     rm -r /root/.cache
+
+RUN ln -snf /usr/share/zoneinfo/UTC /etc/localtime
 
 ENV CONAN_USER_HOME=/conan
 
