@@ -21,6 +21,8 @@ RUN apk add --no-cache python3 \
     doxygen \
     tzdata \
     linux-headers \
+    ninja \
+    binutils-gold \
     libstdc++ && \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
