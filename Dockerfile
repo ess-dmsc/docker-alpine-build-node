@@ -11,14 +11,9 @@ RUN apk add --no-cache python3 \
     m4 \
     perl \
     cloc \
-    flex-dev \
-    valgrind \
-    vim \
     autoconf \
     automake \
     libtool \
-    graphviz \
-    doxygen \
     tzdata \
     linux-headers \
     ninja \
